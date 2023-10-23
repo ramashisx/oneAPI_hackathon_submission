@@ -1,0 +1,5 @@
+__pycache__
+*.pyc
+
+webapp/model.zip
+webapp/model/*
