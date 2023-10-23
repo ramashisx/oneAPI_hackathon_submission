@@ -2,7 +2,7 @@
 
 MODEL_DIR="./model"
 MODEL_ZIP="./model.zip"
-GOOGLE_DRIVE_LINK="https://drive.google.com/uc?id=10ILW2lC1ecktK_q16bTD83qJPDqTNCds&export=download&confirm=t&uuid=67f625d1-5e00-4e15-ac3c-03eed2faa891"
+GOOGLE_DRIVE_LINK="https://drive.google.com/uc?id=10ILW2lC1ecktK_q16bTD83qJPDqTNCds&export=download"
 EXPECTED_DIR_CHECKSUM="02ced3792e90a829ca45e2141b68934b"
 EXPECTED_ZIP_CHECKSUM="d86de200085040b565abdd873148665a"
 
@@ -52,9 +52,8 @@ if [ ! -d "$MODEL_DIR" ]; then
         else
             echo "Model.zip checksum is incorrect. Downloading a new model..."
             # Download the model from Google Drive
-            # Replace the wget command with the appropriate method to download from Google Drive
             # You may need to use a tool like gdown for this.
-            wget "$GOOGLE_DRIVE_LINK" -O "$MODEL_ZIP"
+            gdown "$GOOGLE_DRIVE_LINK" -O "$MODEL_ZIP"
             
             # Unzip the model
             unzip "$MODEL_ZIP" -d "$MODEL_DIR"
@@ -69,9 +68,8 @@ if [ ! -d "$MODEL_DIR" ]; then
     else
         echo "Model.zip does not exist. Downloading a new model..."
         # Download the model from Google Drive
-        # Replace the wget command with the appropriate method to download from Google Drive
         # You may need to use a tool like gdown for this.
-        wget "$GOOGLE_DRIVE_LINK" -O "$MODEL_ZIP"
+        gdown "$GOOGLE_DRIVE_LINK" -O "$MODEL_ZIP"
         
         # Unzip the model
         unzip "$MODEL_ZIP" -d "$MODEL_DIR"
