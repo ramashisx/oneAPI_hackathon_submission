@@ -34,7 +34,7 @@ if [ -d "$MODEL_DIR" ]; then
     fi
 fi
 
-# If the model directory does not exist, or it was removed, proceed to check the model.zip file
+# If the model directory does not exist, proceed to check the model.zip file
 if [ ! -d "$MODEL_DIR" ]; then
     if [ -f "$MODEL_ZIP" ]; then
         # Check the MD5 checksum of the file
@@ -52,7 +52,6 @@ if [ ! -d "$MODEL_DIR" ]; then
         else
             echo "Model.zip checksum is incorrect. Downloading a new model..."
             # Download the model from Google Drive
-            # You may need to use a tool like gdown for this.
             gdown "$GOOGLE_DRIVE_LINK" -O "$MODEL_ZIP"
             
             # Unzip the model
@@ -68,7 +67,6 @@ if [ ! -d "$MODEL_DIR" ]; then
     else
         echo "Model.zip does not exist. Downloading a new model..."
         # Download the model from Google Drive
-        # You may need to use a tool like gdown for this.
         gdown "$GOOGLE_DRIVE_LINK" -O "$MODEL_ZIP"
         
         # Unzip the model
@@ -87,11 +85,11 @@ fi
 # Start the Uvicorn server in the background
 uvicorn api.main:app --reload --port 4444 &
 
-# Wait for 5 seconds
+# Wait for 5 seconds for server to boot up
 sleep 5
 
 # Start the Streamlit app in the background
-streamlit run ./ui/main.py server.port 4445 &
+streamlit run ./ui/main.py --server.port 4445 &
 
 # Wait for both servers to pu logs
 wait

@@ -1,0 +1,43 @@
+body {
+  font-family: sans-serif;
+  background-color: #ffffff;
+}
+
+.st-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.st-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.st-text {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+.st-button {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.st-input {
+  border: 1px solid #ccc;
+}
+
+.answer {
+  font-size: 48px;
+  background-color: rgb(30, 97, 30);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  line-height: 1.5em;
+}
+
+.answer_heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
