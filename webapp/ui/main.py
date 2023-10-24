@@ -61,6 +61,14 @@ def main():
             # Something went wrong with the request
             st.error("Something went wrong while fetching the answer. Please try again later.")
 
+    # Add a footer with some information
+    st.sidebar.markdown(
+        """
+        *Built with ❤️ by Ramashish using Intel OneAPI*
+
+        **Source code**: [GitHub](https://github.com/ramashisx/oneAPI_hackathon_submission)
+        """
+    )
 
 if __name__ == "__main__":
     main()
