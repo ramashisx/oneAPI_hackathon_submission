@@ -5,6 +5,7 @@ try:
     ############# code changes ###############
     import intel_extension_for_pytorch as ipex
     ############# code changes ###############
+    print("Using Intel optimizations for Pytorch")
     OPTIMIZATION_AVAILABLE = True
 except:
     print("Please install intel extenstion for pytorch if using Intel GPUs")
