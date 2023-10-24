@@ -21,7 +21,7 @@ Welcome to the README for the solution developed for the oneAPI Hackathon: The L
 The challenge at hand required us to leverage Large Language Models (LLMs) for the purpose of generating accurate, context-aware answers. After assessing the problem statement and the available resources, we determined that this was not just an extractive question-answering task but also involved generative question-answering. To tackle this, we decided to fine-tune a T5-based model trained on the Squad v2 dataset.
 
 ## Benchmark Results
-![](./assets/benchmark.jpg)
+![](./assets/benchmark.png)
 
 ## Techology used in WebApp and overall project
 [Intel® oneAPI AI Analytics Toolkit](https://www.intel.com/content/www/us/en/developer/tools/oneapi/ai-analytics-toolkit-download.html)
