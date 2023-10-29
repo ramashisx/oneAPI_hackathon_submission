@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Enable the "set -e" option to exit on error
+set -e
+
 # Prompt the user for a single argument
 echo "Enter Trained Model path:"
 read arg

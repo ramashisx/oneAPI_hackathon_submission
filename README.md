@@ -10,7 +10,11 @@
 * To deploy the webapp go to the [webapp](./webapp ) folder
 * The blog is there in the [docs](./docs) folder
 * Navigate to your preferred folder for further instructions
+-----------------------------------------
 
+
+## Blog [Link](https://medium.com/@ramashisx/from-training-to-model-deployment-harnessing-intel-oneapis-potential-601027d1fcce) (follow this link or go to [docs](./docs/) folder)
+## [WebApp](./webapp/) (Deploy on intel XPU to get the best out of oneAPI optimizations)
 
 ## Introduction
 
@@ -18,7 +22,25 @@ Welcome to the README for the solution developed for the oneAPI Hackathon: The L
 
 ## Solution Overview
 
-The challenge at hand required us to leverage Large Language Models (LLMs) for the purpose of generating accurate, context-aware answers. After assessing the problem statement and the available resources, we determined that this was not just an extractive question-answering task but also involved generative question-answering. To tackle this, we decided to fine-tune a T5-based model trained on the Squad v2 dataset.
+In this section, we'll provide a concise overview of our solution, focusing on the key components and steps involved in harnessing Intel oneAPI's potential for creating a generative Question Answering model and deploying it as a web application.
+
+
+**Data Preparation**
+
+Data is the bedrock of our solution. Our unique question-answering dataset poses challenges with 35% of answers not present in the context, requiring a generative question-answering model with an encoder-decoder architecture.
+
+**Training the Model**
+
+After assessing the problem statement and the available resources, we determined that this was not just an extractive question-answering task but also involved generative question-answering. To tackle this, I decided to fine-tune a T5-based model trained on the Squad v2 dataset.
+
+**Quantization and Pruning**
+
+To optimize our model, we employed quantization and pruning techniques. Quantization boosts speed and efficiency by reducing numerical precision, while pruning enhances efficiency by eliminating less critical parameters. This dual strategy balances accuracy and operational speed.
+
+**Deployment as a Web Application**
+
+After successful training, we deployed the model as a web application. The architecture featured a FastAPI-powered backend and a Streamlit-based frontend for an intuitive user experience. Modularity allows easy adaptation for different machine learning models.
+
 
 ## Benchmark Results
 ![](./assets/benchmark.png)

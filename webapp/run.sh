@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Enable the "set -e" option to exit on error
+set -e
+set -o pipefail
+
 MODEL_DIR="./model"
 MODEL_ZIP="./model.zip"
 GOOGLE_DRIVE_LINK="https://drive.google.com/uc?id=10ILW2lC1ecktK_q16bTD83qJPDqTNCds&export=download"
@@ -15,6 +19,7 @@ check_directory_checksum() {
             return 0
         else
             echo "Checksum is incorrect for $1"
+            echo "If you are getting this error in loop make sure checksumdir is installed, make sure you did install requirnments from this folder"
             return 1
         fi
     else
