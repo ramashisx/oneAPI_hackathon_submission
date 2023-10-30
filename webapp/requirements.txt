@@ -1,0 +1,6 @@
+fastapi
+streamlit
+uvicorn
+torch
+huggingface
+transformers[sentencepiece]

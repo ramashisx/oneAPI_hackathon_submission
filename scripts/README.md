@@ -6,7 +6,8 @@
 * If not using tmux just simply open your dev cloud terminal 
 * run `srun --pty bash`
 * run `source /opt/intel/oneapi/setvars.sh`
-* run `pip install -r requirnments.txt`
+* run `pip install -r requirements.txt`
+* run `pip install intel_extension_for_pytorch==2.0.110+xpu -f https://developer.intel.com/ipex-whl-stable-xpu` (if using xpu enabled device)
 * Let's start training run `python train.py`
 * If you using tmux press ctrl+b and then d this will minimise your terminal
 * To open again run `tmux a -t main` this resume your terminal without stopping training

@@ -1,9 +1,0 @@
-checksumdir
-gdown
-fastapi
-streamlit
-uvicorn
-torch
-huggingface
-neural-compressor
-pydantic

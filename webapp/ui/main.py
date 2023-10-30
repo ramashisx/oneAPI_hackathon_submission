@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 
-URL = "http://127.0.0.1:4444/"
+URL = "http://localhost:4444/"
 
 
 def main():
@@ -24,11 +24,23 @@ def main():
     # Display the app title
     st.title("Intel OneAPI")
 
-    # Create a form to collect the context and question from the user
-    with st.form("form"):
-        context = st.text_area("Enter Context", placeholder="Enter the context for your question here...", height=200)
-        question = st.text_input("Enter Question", placeholder="Enter your question here...")
+    input_choice = st.radio("Choose an input method", ["Enter Text", "Upload a File"])
 
+    # Create a form to collect the context, question, and file or text choice from the user
+    with st.form("form"):
+        
+        context = ""
+        question = ""
+        uploaded_file = None
+
+        if input_choice == "Enter Text":
+            context = st.text_area("Enter Context", placeholder="Enter the context for your question here...", height=200)
+        else:
+            uploaded_file = st.file_uploader("Upload a File", type=["txt"])
+            if uploaded_file:
+                context = uploaded_file.read().decode('utf-8')
+
+        question = st.text_input("Enter Question", placeholder="Enter your question here.")
         submit_button = st.form_submit_button("Submit")
 
     # If the user has submitted the form, submit the context and question to the Bard AI service
