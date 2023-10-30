@@ -4,7 +4,6 @@ fastapi
 streamlit
 uvicorn
 torch
-huggingfcae
+huggingface
 neural-compressor
 pydantic
-intel_extension_for_pytorch==2.0.110+xpu -f https://developer.intel.com/ipex-whl-stable-xpu

@@ -3,7 +3,7 @@ from pydantic import BaseModel
 from api.model import Model
 
 app = FastAPI()
-answer_generator = Model("./model/oneapi-hack-model/", "./model/oneapi-hack-model/")
+answer_generator = Model("ramashisx/t5_base_generative_qa", "ramashisx/t5_base_generative_qa")
 answer_generator.prepare_model()
 
 class Input(BaseModel):
