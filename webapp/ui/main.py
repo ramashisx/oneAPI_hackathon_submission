@@ -19,7 +19,7 @@ def main():
     top_image_bar = st.container()
 
     # Add an image to the top image bar
-    top_image_bar.image("../assets/top_image.jpg", width=256)
+    top_image_bar.image("./ui/top_image.jpg", width=256)
 
     # Display the app title
     st.title("Intel OneAPI")
