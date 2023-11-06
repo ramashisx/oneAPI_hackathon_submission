@@ -17,8 +17,9 @@
 ## WebApp [Link](https://huggingface.co/spaces/ramashisx/generative_qa) (Deploy on intel XPU to get the best out of oneAPI optimizations)
 
 
-https://github.com/ramashisx/oneAPI_hackathon_submission/assets/77979818/fdb25c8c-742c-4f93-9611-5500a85f38fd
 
+
+[![Demo Video](https://t4.ftcdn.net/jpg/05/89/27/21/360_F_589272121_akMVElogcYg2xhMoL3EQntLNKSQ4X6zC.jpg)](https://github.com/ramashisx/oneAPI_hackathon_submission/assets/77979818/fdb25c8c-742c-4f93-9611-5500a85f38fd)
 
 
 ## Introduction
