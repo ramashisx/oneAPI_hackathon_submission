@@ -16,6 +16,11 @@
 ## Blog [Link](https://medium.com/@ramashisx/from-training-to-model-deployment-harnessing-intel-oneapis-potential-601027d1fcce) (follow this link or go to [docs](./docs/) folder)
 ## WebApp [Link](https://huggingface.co/spaces/ramashisx/generative_qa) (Deploy on intel XPU to get the best out of oneAPI optimizations)
 
+
+https://github.com/ramashisx/oneAPI_hackathon_submission/assets/77979818/fdb25c8c-742c-4f93-9611-5500a85f38fd
+
+
+
 ## Introduction
 
 Welcome to the README for the solution developed for the oneAPI Hackathon: The LLM Challenge. This solution focuses on harnessing the power of Language Models (LLMs) to address the challenge of text understanding and generation for accurate, context-aware answers. The primary goal of this project is to create a robust LLM, and then utilize it effectively within an application. In addition, this README will provide an overview of the steps taken to build the solution, including the tools and technologies used.
