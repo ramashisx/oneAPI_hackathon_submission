@@ -1,4 +1,4 @@
-# Intel oneAPI Hackathon: The LLM Challenge
+# Intel oneAPI Hackathon: The LLM Challenge (Winner Solution)
 ------------------------------------
 
 ## How to train and generate result
