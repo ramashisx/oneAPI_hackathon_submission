@@ -15,7 +15,7 @@
 
 
 ## Blog [Link](https://medium.com/@ramashisx/from-training-to-model-deployment-harnessing-intel-oneapis-potential-601027d1fcce) (follow this link or go to [docs](./docs/) folder)
-## WebApp [Link](https://huggingface.co/spaces/ramashisx/generative_qa) (Deploy on intel XPU to get the best out of oneAPI optimizations)
+## WebApp (Deploy on intel XPU to get the best out of oneAPI optimizations)
 
 
 
